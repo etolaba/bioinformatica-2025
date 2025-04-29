@@ -34,7 +34,7 @@ Aprende sobre transcripcion, traduccion y expresion genica mientras te divertis 
 
 ## ¿Cual es el objetivo?
 
-**Completar una proteina funcional** de **10 aminoacidos** antes que tu rival.  
+**Completar una proteina funcional** de **7 aminoacidos** antes que tu rival.  
 La proteina se va formando paso a paso, y podes verla como una barra de progreso en cada turno.  
 El primer jugador en completar su proteina gana la Batalla Transcripcional.
 
