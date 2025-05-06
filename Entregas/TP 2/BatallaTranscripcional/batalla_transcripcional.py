@@ -67,6 +67,20 @@ codones = {
     'UAA': 'STOP', 'UAG': 'STOP', 'UGA': 'STOP'
 }
 
+ascii_celula_redonda = r"""
+         .-"      "-.
+       .'              '.
+      /  ~  ~   ~    ~   \
+     |  ()  ()   ()  ()   |
+     |    .::::.   .:::.  |
+      \   '::::'   ':::' /
+       '.              .'
+         '-._______.-'
+
+      CELULA VICTORIOSA
+ ¡Expresion genetica completada!
+     Proteina funcional lograda
+"""
 
 def transcribir_adn_fragmento(adn, avance):
     fragmento = adn[:avance].replace('T', 'U')
@@ -98,9 +112,8 @@ def mostrar_estado():
 
 turno = 0
 avance_transcripcion = 9
-
+mostrar_estado()
 while True:
-    mostrar_estado()
     jugador = "A" if turno % 2 == 0 else "B"
     rival = "B" if jugador == "A" else "A"
 
@@ -118,7 +131,14 @@ while True:
         break
 
     print(f"\n=== Turno de Jugador {jugador} ===")
-    print("Acciones disponibles: tr (Transcribir), td (Traducir), mt (Mutar), rp (Reparar), rf (Reforzar promotor), br (Bloquear)")
+    print("Acciones disponibles:")
+    print("  tr  (Transcribir)               - costo: 0")
+    print("  td  (Traducir)                  - costo: 0")
+    print("  mt  (Mutar al rival)            - costo: 2")
+    print("  rp  (Reparar mutaciones)        - costo: 2")
+    print("  rf  (Reforzar promotor)         - gana 1 energia")
+    print("  br  (Bloquear traduccion rival) - costo: 3")
+
 
     accion = ""
     while accion not in acciones:
@@ -191,6 +211,9 @@ while True:
         print("\n========================================")
         print(f"FELICITACIONES: El Jugador {jugador} completo una proteina funcional y gana el juego!")
         print("========================================\n")
+        print(ascii_celula_redonda)
         break
 
+
     turno += 1
+    mostrar_estado()
