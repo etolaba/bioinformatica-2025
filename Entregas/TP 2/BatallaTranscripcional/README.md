@@ -42,9 +42,13 @@ El primer jugador en completar su proteina gana la Batalla Transcripcional.
 
 ## ¿Que necesitas para jugar?
 
-- Python 3.8 o superior instalado.
-- Una terminal o consola de comandos (funciona en Windows, Linux, Mac).
-- ¡Ganas de divertirte y aprender sobre genetica!
+- [Python 3.8 o superior](https://www.python.org/downloads/) instalado en tu computadora.
+- Una terminal o consola de comandos (funciona en Windows, Linux y Mac).
+  - [Cómo abrir la terminal en Windows](https://www.digitalcitizen.life/open-cmd/)
+  - [Cómo abrir la terminal en macOS](https://support.apple.com/guide/terminal/welcome/mac)
+  - [Cómo abrir la terminal en Linux (Ubuntu)](https://help.ubuntu.com/community/UsingTheTerminal)
+- ¡Ganas de divertirte y aprender sobre genética!
+
 
 Para empezar:
 ```bash
