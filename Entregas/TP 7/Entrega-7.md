@@ -115,4 +115,14 @@ La corrida se ejecuta desde el Runtime --> Run all
 
     ¿Qué regiones de la estructura resultante tienen una mayor confianza? Desarrollar un script que permita graficar los pLDDT por posición
 
-    
+    En el gráfico se muestra la confianza de AlphaFold (pLDDT) por posición:
+
+    Valores cercanos a 100: Alta confianza.
+    Valores bajos (menor a 70): Baja confianza estructural.
+    El entorno me provee gráficos para ver esto ya:
+
+    ![alt text](image.png)
+
+    Script que hace lo mismo en graficar.py, gráfico obtenido:
+
+    ![alt text](image-1.png)
