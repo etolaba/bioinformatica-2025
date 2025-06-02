@@ -107,22 +107,22 @@ sp|P03129|VE7_HPV16 Protein E7 OS=Human papillomavirus type 16 OX=333760 GN=E7 P
 
 La corrida se ejecuta desde el Runtime --> Run all
 
-    ¿Qué el campo template_mode? ¿Qué opciones pueden ser utilizadas?
+¿Qué el campo template_mode? ¿Qué opciones pueden ser utilizadas?
 
-    Este campo indica si AlphaFold buscará estructuras similares en bases de datos para mejorar su predicción, si elegimos 'none' no usará ninguna plantilla estructural (predicción pura ab initio).
-    Si elegimos pdb100 como hicimos en el ejemplo usará la bd de pdb100 para buscar estructuras similares conocidas como referencia.
-    Por último, con 'custom' uno puede subir sus propias plantillas.
+Este campo indica si AlphaFold buscará estructuras similares en bases de datos para mejorar su predicción, si elegimos 'none' no usará ninguna plantilla estructural (predicción pura ab initio).
+Si elegimos pdb100 como hicimos en el ejemplo usará la bd de pdb100 para buscar estructuras similares conocidas como referencia.
+Por último, con 'custom' uno puede subir sus propias plantillas.
 
-    ¿Qué regiones de la estructura resultante tienen una mayor confianza? Desarrollar un script que permita graficar los pLDDT por posición
+¿Qué regiones de la estructura resultante tienen una mayor confianza? Desarrollar un script que permita graficar los pLDDT por posición
 
-    En el gráfico se muestra la confianza de AlphaFold (pLDDT) por posición:
+En el gráfico se muestra la confianza de AlphaFold (pLDDT) por posición:
 
-    Valores cercanos a 100: Alta confianza.
-    Valores bajos (menor a 70): Baja confianza estructural.
-    El entorno me provee gráficos para ver esto ya:
+Valores cercanos a 100: Alta confianza.
+Valores bajos (menor a 70): Baja confianza estructural.
+El entorno me provee gráficos para ver esto ya:
 
-    ![alt text](image.png)
+![alt text](image.png)
 
-    Script que hace lo mismo en graficar.py, gráfico obtenido:
+Script que hace lo mismo en graficar.py, gráfico obtenido:
 
-    ![alt text](image-1.png)
+![alt text](image-1.png)
