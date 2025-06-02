@@ -91,4 +91,28 @@ DESAFÍO IV: Investigá en CaviDB la las características estructurales de la Al
 
 DESAFÍO V: Se sabe que en la albúmina bovina el sitio activo se encuentra corrido respecto del humano, aunque también involucra un aminoácido cargado (Lys 221). Investigá en CaviDB las características estructurales de la estructura de albúmina bovina 4JK4A y compará las características de su sitio activo con las características del sitio activo de la albúmina humana (Lys 199)
 
+Ambas están en la cavity 1, se manejan en un entorno químico predominantemente hidrofóbico, tienen un tamaño de cavidad similar y ambas poseen un alto potencial catalítico. Se puede llegar a sugerir que ambas cavidades tienen actividad catalítica comparable.
 
+Para investigar: Leé más sobre los hallazgos hechos por l@s investigadores/as de la Universidad Nacional de Quilmes sobre la evolución de albúminas y contrastalo con lo que pusidte observar.
+
+Luego de observar los principales hallazgos podría deducir que:
+
+Las albúminas evolucionaron por duplicación y diversificación de dominios, manteniendo funciones de transporte pero incorporando nuevas capacidades catalíticas.
+A pesar de la alta conservación estructural hay diferencias sutiles como las vistas en el punto anterior en los sitios activos.
+Este tipo de diferencias permiten adaptaciones funcionales específicas que no necesariamente comprometen la estructura general de las proteínas.
+
+DESAFÍO VI: En el campo sequence query ingresá la sigueinte sequencia colab, usando num_relax = 1 y template_mode = pdb100:
+
+sp|P03129|VE7_HPV16 Protein E7 OS=Human papillomavirus type 16 OX=333760 GN=E7 PE=1 SV=1 MHGDTPTLHEYMLDLQPETTDLYCYEQLNDSSEEEDEIDGPAGQAEPDRAHYNIVTFCCKCDSTLRLCVQSTHVDIRTLEDLLMGTLGIVCPICSQKP
+
+La corrida se ejecuta desde el Runtime --> Run all
+
+    ¿Qué el campo template_mode? ¿Qué opciones pueden ser utilizadas?
+
+    Este campo indica si AlphaFold buscará estructuras similares en bases de datos para mejorar su predicción, si elegimos 'none' no usará ninguna plantilla estructural (predicción pura ab initio).
+    Si elegimos pdb100 como hicimos en el ejemplo usará la bd de pdb100 para buscar estructuras similares conocidas como referencia.
+    Por último, con 'custom' uno puede subir sus propias plantillas.
+
+    ¿Qué regiones de la estructura resultante tienen una mayor confianza? Desarrollar un script que permita graficar los pLDDT por posición
+
+    
